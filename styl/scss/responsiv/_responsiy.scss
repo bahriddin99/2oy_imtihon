@@ -1,0 +1,349 @@
+// $desktop:1440px;
+// $tablet:768px;
+// $mobile: 375px;
+
+#menu{
+    display: none;
+}
+@media  (max-width:1200px){
+    #menu{
+        display: block;
+    }
+    
+    .container{
+        width: 834px;
+        .navbar-title{
+            display: none;
+        }
+    }
+
+    section#friend{
+        .container{
+            flex-direction: column;
+            .friend-title{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+               
+                
+                h1{
+                    color: var(--primary-color-dark-blue-80, #002A48);
+                        font-size: 46px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 60px;
+                        text-transform: capitalize;
+                }
+                h2{
+                    color: var(--primary-color-dark-blue-80, #002A48);
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 38px;
+                        text-transform: capitalize;
+                }
+                p{
+                    font-size: 12px;
+                    width: 382px;
+                }
+            }
+    
+        }
+
+    }
+    section#puppy{
+        .container{
+            .cards{
+                margin-block: 10px;
+                padding: 8px 8px;
+                display: grid;
+                grid-template-columns: repeat(2,4fr);
+                img{
+                    width: 100%;
+                   
+                }
+                
+            }
+            p{
+                font-size: 16px;
+            }
+            .puppy-title{
+                p{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    section#explore{
+    
+        .container{
+            width: 572px;
+                        height: 640px;
+                        overflow: hidden;
+                .explore-title{
+                    position: relative;
+                    // align-items: end;
+                    .rectangle_10{
+                        display: block;
+                        position: absolute;
+                        top: -260px;
+                        z-index: -1;
+                    }
+                    .explore-info{
+                       
+                        align-items: center;
+                       
+                        margin-left: -590px;
+                        z-index: -1;
+                        
+                        h1{
+                            font-size: 36px;
+                           text-align: center;
+                        }
+                        h2{
+                           
+                            font-size: 24px;
+                            align-items: center;
+                        }
+                        p{
+                            font-size: 12px;
+                            width: 342px;
+                            text-align: center
+                            
+                        }
+                    }
+
+                    .rectangle_1 {
+                        margin-block: 420px;
+                    }
+                    .rectangle_9 {
+                        display: none;
+                    }
+                    img{
+                        margin-top: 260px;
+                    }
+                }
+        }
+    }
+    section#products{
+        .container{
+           p{
+            font-size: 16px;
+           } 
+           .products-title{
+            p{
+                font-size: 24px;
+            }
+           }
+           .cards{
+            display: grid;
+            grid-template-columns: repeat(2,4fr);
+            img{
+                width: 100%;
+            }
+           }
+        }
+    }
+    section#sellers{
+        display: none;
+    }
+    section#adoption{
+        display: none;
+    }
+    section#knowledge{
+        .container{
+            p{
+                font-size: 16px;
+            }
+            .knowledge{
+                p{
+                    font-size: 24px;
+                }
+            }
+            .cards{
+                grid-template-columns: repeat(1, 380px);
+                display: flex;
+                justify-content: center;
+                &>:not(:first-child){
+                    display: none;
+                }
+            }
+        }
+    }
+    section#footer{
+        .container{
+            .yakun{
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+               
+               .yakun_1{
+                order: 3;
+               
+               }
+               .yakun_2{
+                order: 1;
+              
+               }
+               .yakun_3{
+                order: 2;
+                margin-block: -300px;
+               }
+            }
+            .heading{
+                width: 578px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 122px;
+            }
+            .footer-infons {
+                    display: flex;
+                    flex-direction: column;
+                    .footer-icon{
+                        display: flex;
+                        justify-content: center;
+                        margin-block: 40px;
+                    }
+                    .footer-info{
+                       .navbar-title{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 120px;
+                       }
+                    }
+                }
+            .footer-registor{
+                display: flex;
+                justify-content: center;
+               
+                .registor{
+                  flex-direction: column;
+                    width: 578px;
+                    height: 186px;
+                    align-items: center;
+                    justify-content: center;
+                   .footer-title{
+                   
+                    
+                    h2{
+                        font-size: 20px;
+                    }
+                    
+                   } 
+                   .footer-email{
+                    justify-content: center;
+                    width: 546px;
+                    align-items: center;
+            
+                        .footer-form{
+                            flex: 1;
+                            input{
+                                width: 255px;
+                            }
+                            
+                        }
+                        .btnnn{
+                        // flex: 1;
+                        width: 255px;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+}
+
+
+@media (max-width:834px){
+    #navbar{
+    display: none;
+    #menu {
+        display: block;
+    }
+    
+    .container {
+        width: 400px;
+        
+        
+        .navbar-title {
+            display: none;
+        }
+    }
+ }
+
+
+ section#puppy{
+    .container{
+        .cards{
+           
+            .card{
+                img{
+                   width: 100%;
+                }
+            }
+            a{
+            color: var(--primary-color-dark-blue, #003459);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                text-align: center;
+            }
+            .card-btnn{
+                display: block;
+               width: 100%;
+                border-radius: 57px;
+                padding: 14px 28px 10px 28px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border: 1.5px solid var(--primary-color-dark-blue, #003459);
+            }
+        }
+        p{
+            font-size: 14px;
+        }
+        .puppy-title{
+            p{
+                font-size: 24px;
+            }
+            .btnn{
+                display: none;
+            }
+           
+        }
+    }
+ }
+ section#products{
+    display: none;
+ }
+ section#sellers{
+    .container{
+       .sellers-title{
+        .btnn{
+            display: none;
+        }
+         .sellers-info{
+            h3{
+                display: red;
+            }
+         }
+        .view{
+            display: none;
+        }
+       }
+    }
+ }
+ 
+
+
+
+ 
+}
+

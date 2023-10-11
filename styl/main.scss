@@ -1,0 +1,77 @@
+@import "../styl/scss/base/resert";
+@import "../styl/scss/base/units";
+@import "../styl/scss/base/variablis";
+
+
+@import "../styl/scss/partialis/narbar";
+ 
+@import "../styl/scss/partialis/friend";
+@import "../styl/scss/partialis/puppy";
+@import "../styl/scss/partialis/explore";
+@import "../styl/scss/partialis/products";
+@import "../styl/scss/partialis/sellers";
+@import "../styl/scss/partialis/adoption";
+@import "../styl/scss/partialis/knowledge";
+@import "../styl/scss/partialis/footer";
+
+
+
+
+
+
+@import "../styl/scss/responsiv/responsiy";
+
+.dropdown-menu {
+    transform: translateX(-110%);
+    position: fixed;
+    inset: 0;
+     background: #003459;
+    width: 45%;
+    color: white;
+    padding-inline: 37px;
+    padding-top: 15px;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+
+    li {
+        margin-block: 12px;
+    }
+
+    ul li:first-child {
+        align-self: flex-end;
+        text-align: right;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .search {
+        background-color: white;
+        color: black;
+        border-radius: 46px;
+        display: flex;
+        width: 280px;
+        padding: 12px 20px 12px 16px;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        height: 48px;
+
+        input {
+            border: none;
+            outline: none;
+        }
+    }
+
+    .btn {
+        background-color: rgb(231, 168, 52);
+        width: 100%;
+        border-radius: 46px;
+        text-align: center;
+    }
+}
+
+input[type="checkbox"]:checked+.dropdown-menu {
+    transform: translateX(0%);
+}

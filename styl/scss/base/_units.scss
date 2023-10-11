@@ -1,0 +1,50 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+$sides: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left,
+    x: inline,
+    y: block,
+);
+
+@each $key, $side in $sides {
+    @for $i from 0 to 6 {
+        .m#{$key}-#{$i} {
+            margin-#{$side}: $i * 0.5rem;
+        }
+
+        .p#{$key}-#{$i} {
+            padding-#{$side}: $i * 0.5rem;
+        }
+    }
+}
+.btn{
+        display: flex;
+        width: 203px;
+        height: 44px;
+        padding: 14px 28px 10px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        border-radius: 57px;
+        background: var(--primary-color-dark-blue, #003459);
+        
+}
+.btnn{
+        display: flex;
+        width: 180px;
+        height: 50px;
+        padding: 14px 28px 10px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #003459;
+        border-radius: 57px;
+        border: 1.5px solid var(--primary-color-dark-blue, #003459);
+}

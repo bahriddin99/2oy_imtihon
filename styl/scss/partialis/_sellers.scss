@@ -1,0 +1,47 @@
+section#sellers{
+    background: #fcfcfc;
+    .container{
+        .sellers-img{
+            display: flex;
+            gap: 75px;
+            height: 115px;
+           
+        }
+       .sellers-title{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        .sellers-info{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            h3{
+                color: var(--primary-color-dark-blue, #003459);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                // line-height: 36px;
+                text-transform: capitalize;
+            }
+        }
+
+        a{
+            color: var(--primary-color-dark-blue, #003459);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+       .view{
+        display: flex;
+        height: 44px;
+        padding: 12px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 57px;
+        border: 1.5px solid var(--primary-color-dark-blue, #003459);
+       }
+       } 
+    }
+}

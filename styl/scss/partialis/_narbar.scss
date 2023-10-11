@@ -1,0 +1,65 @@
+header#navbar{
+    .dropdwon-menu {
+            display: none;
+            // background-color: #003459;
+            position: absolute;
+            top: 60px;
+            
+        }
+         input[type="checkbox"]:checked + .dropdwon-menu {
+                        display: block;
+                    }
+
+    background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
+    .container{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        
+        .navbar-title{
+            display: flex;
+            gap: 48px;
+            li{
+                color: var(--primary-color-dark-blue, #003459);
+                font-weight: 700px;
+               
+                
+            }
+        }
+        .navbar-seach{
+            display: flex;
+            gap: 14px;
+            align-items: center;
+           
+        
+           li{
+            
+               a {
+            
+                    font-weight: 500;
+                }
+           }
+           
+            .navbar-from{
+                // gap: 14px;
+                label{
+                    border-radius: 46px;
+                    height: 44px;
+                    width: 280px;
+                    background:white;
+                    padding: 12px 20px;
+                    display: flex;
+                    gap: 12px;
+                    input{
+                        border:none;
+                        outline: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
